@@ -1,8 +1,15 @@
 import React from 'react'
+import HeroSection from './components/HeroSection'
+import BottomSection from './components/BottomSection'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className='text-[60px]'>hello</div>
+   <>
+  
+   <HeroSection/>
+   <BottomSection/>
+   </>
   )
 }
 
