@@ -28,6 +28,7 @@ function HeroSection() {
         className="relative w-full lg:h-[110vh] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${BlurBg})` }}
       >
+        {/* <div className="absolute inset-0 bg-black bg-opacity-10"></div> */}
         {/* Background Image Overlay */}
         <div
           className="absolute inset-0 top-0 left-0 w-full lg:h-[110vh] bg-cover bg-center bg-no-repeat"
@@ -35,7 +36,7 @@ function HeroSection() {
         ></div>
 
         {/* Black Overlay */}
-        <div className="absolute inset-0 top-0 left-0 w-full lg:h-[110vh] bg-black opacity-65"></div>
+        <div className="absolute inset-0 top-0 left-0 w-full lg:h-[110vh] bg-black/65"></div>
 
         {/* Navbar */}
         <div className="relative z-10">
