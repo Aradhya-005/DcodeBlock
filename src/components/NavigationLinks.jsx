@@ -15,23 +15,27 @@ const NavigationLinks = () => {
   ];
 
   return (
-    <header className="flex items-center space-x-7 pt-2">
+    <header className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-7 pt-2 sm:pt-0">
       {/* Logo & Title */}
-      <div className="flex items-center gap-3 pl-10">
-        <img src={hackIndiaLogo} alt="HackIndia Logo" className="w-[38px] h-[38px]" />
-        <h1 className="font-proxon text-[22px] text-white uppercase tracking-widest">
+      <div className="flex items-center gap-3 pl-4 sm:pl-10">
+        <img
+          src={hackIndiaLogo}
+          alt="HackIndia Logo"
+          className="w-[30px] h-[30px] sm:w-[38px] sm:h-[38px]"
+        />
+        <h1 className="font-proxon text-[18px] sm:text-[22px] text-white uppercase tracking-widest">
           HackIndia
         </h1>
       </div>
 
       {/* Navigation Links */}
-      <ul className="flex gap-2.5 text-white bg-[#28083A] border-2 border-[#DFDFDF1A] rounded-[10px] py-3 px-[30px]">
+      <ul className="flex flex-wrap justify-center gap-2 sm:gap-2.5 text-white bg-[#28083A] border-2 border-[#DFDFDF1A] rounded-[10px] py-2 sm:py-3 px-4 sm:px-[30px]">
         {navLinks.map((link, index) => (
           <li key={index}>
             <NavLink
               to={link.path}
               className={({ isActive }) =>
-                `relative bg-cover bg-center bg-no-repeat inline-flex items-center justify-center px-6 py-3 text-[13px] text-center text-white font-proxon tracking-wider whitespace-nowrap w-auto transition-all duration-300 ${
+                `relative bg-cover bg-center bg-no-repeat inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 text-[12px] sm:text-[13px] text-center text-white font-proxon tracking-wider whitespace-nowrap w-auto transition-all duration-300 ${
                   isActive ? "active-navlink" : "hover-navlink"
                 }`
               }

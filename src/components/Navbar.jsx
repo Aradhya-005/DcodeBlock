@@ -7,10 +7,14 @@ import ActiveButtonBgImg from "../assets/ActiveButtonBg.png"; // Add this image 
 function Navbar() {
   return (
     <>
-      <nav className="flex justify-between px-10 py-3 bg-[#000000E5] items-center">
+      <nav className="flex justify-between px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 bg-[#000000E5] items-center">
         {/* Logo */}
         <div>
-          <img src={Logo} alt="Logo" />
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-24 sm:w-28 md:w-32 lg:w-auto" // Adjust logo size for smaller screens
+          />
         </div>
 
         {/* Sign In Button */}
@@ -18,7 +22,7 @@ function Navbar() {
           <NavLink
             to="/signin"
             className={({ isActive }) =>
-              `relative bg-cover bg-center bg-no-repeat inline-flex items-center justify-center px-6 py-3 text-[16px] text-center text-white font-proxon font-normal tracking-wider whitespace-nowrap w-[153px] transition-all duration-300 ${
+              `relative bg-cover bg-center bg-no-repeat inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 text-[14px] sm:text-[16px] text-center text-white font-proxon font-normal tracking-wider whitespace-nowrap w-[120px] sm:w-[140px] md:w-[153px] transition-all duration-300 ${
                 isActive ? "active-navlink" : "hover-navlink"
               }`
             }

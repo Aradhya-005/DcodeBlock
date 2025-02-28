@@ -30,16 +30,20 @@ function BottomSection() {
       <div className="absolute top-0 left-0 w-full h-[120vh] bg-black/75"></div>
 
       {/* Content Above the Overlay */}
-      <div className="relative z-10 flex flex-row font-proxon gap-12 py-[150px]">
+      <div className="relative z-10 flex flex-col lg:flex-row font-proxon gap-8 lg:gap-12  lg:py-[150px] px-4 lg:px-0">
         {/* Left Section */}
-        <div className="flex flex-col text-white gap-20">
+        <div className="flex flex-col text-white gap-8 lg:gap-20">
           <div className="left-0">
-            <img src={ThunderImg} alt="Thunder Image" />
+            <img
+              src={ThunderImg}
+              alt="Thunder Image"
+              className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-auto"
+            />
           </div>
-          <div className="flex flex-col gap-12 pl-20 tracking-widest">
+          <div className="flex flex-col gap-8 lg:gap-12 lg:pl-20 tracking-widest">
             <div>
               <h1
-                className="text-5xl"
+                className="text-3xl sm:text-4xl lg:text-5xl"
                 style={{
                   textShadow: "0px 4px 4px #D9D9D9",
                 }}
@@ -47,7 +51,7 @@ function BottomSection() {
                 150+
               </h1>
               <p
-                className="text-3xl"
+                className="text-xl sm:text-2xl lg:text-3xl"
                 style={{
                   textShadow: "0px 4px 4px #D9D9D9",
                 }}
@@ -55,31 +59,35 @@ function BottomSection() {
                 Universities participating
               </p>
             </div>
-            <div className="flex flex-row gap-12">
+            <div className="flex flex-col sm:flex-row gap-8 lg:gap-12">
               <div>
-                <h1 className="text-5xl">72+</h1>
-                <p className="text-3xl">Judges</p>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl">72+</h1>
+                <p className="text-xl sm:text-2xl lg:text-3xl">Judges</p>
               </div>
               <div>
-                <h1 className="text-5xl">21</h1>
-                <p className="text-3xl">Hackathons</p>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl">21</h1>
+                <p className="text-xl sm:text-2xl lg:text-3xl">Hackathons</p>
               </div>
               <div>
-                <h1 className="text-5xl">36+</h1>
-                <p className="text-3xl">Great Speakers</p>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl">36+</h1>
+                <p className="text-xl sm:text-2xl lg:text-3xl">Great Speakers</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Right Section */}
-        <div>
-          <img src={ScreenShotImg} alt="Screenshot Image" />
+        <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <img
+            src={ScreenShotImg}
+            alt="Screenshot Image"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-auto"
+          />
         </div>
       </div>
 
       {/* Infinite Scroll Section */}
-      <div>
+      <div className="mt-8 lg:mt-0">
         <InfiniteScroll
           images={SecondImgSet}
           className="bg-[#D9D9D9]"
@@ -88,7 +96,7 @@ function BottomSection() {
       </div>
 
       {/* Footer Section */}
-      <div className="relative z-20 pt-16">
+      <div className="relative z-20 pt-8 lg:pt-16">
         <Footer />
       </div>
     </section>
