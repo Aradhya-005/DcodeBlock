@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: Proxon;
-    /* font-weight: 200 700; */
-    src: url('../src/assets/fonts/proxon.ttf');
+  font-family: 'Proxon';
+  src: url('../src/assets/fonts/proxon.ttf');
+  /* font-weight: 200 700; */
+}
+
+@font-face {
+  font-family: 'VTF Justina GEO';
+  src: url('../src/assets/fonts/VTFJustinaGEO-Bold.otf');
+  /* font-weight: 700; */
+  
 }
 @theme{
-    --font-proxon: Proxon, 'sans-serif'
+    --font-proxon: Proxon, 'sans-serif';
+    --font-vtfjustinageo : VTF Justina GEO, 'sans-serif';
 
 }
+
 
 @keyframes scroll {
     0% {
