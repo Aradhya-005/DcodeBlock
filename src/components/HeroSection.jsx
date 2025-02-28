@@ -10,7 +10,7 @@ import InfinteScroll_4 from "../assets/infinte-scroll-4.svg";
 import BgImg from "../assets/BackgroundVideo.svg";
 import BlurBg from "../assets/blur-2.png";
 import SingularityLogo from "../assets/Singularity-White-logo.svg";
-import ButtonBgImg from "../assets/button-bg.svg";
+import ButtonBgImg from "../assets/button-bg.png";
 
 function HeroSection() {
   const images = [
@@ -75,10 +75,13 @@ function HeroSection() {
             </div>
           </div>
           <button
-            style={{ backgroundImage: `url(${BgImg})` }}
-            className="z-10 relative w-48 h-16 bg-cover bg-center bg-no-repeat text-white text-lg font-bold flex items-center justify-center"
+            className="relative bg-cover font-VTFJustinaGeoRegular font-light tracking-wider bg-center bg-no-repeat  w-[178px] h-[60px] flex items-center justify-center text-white"
+            style={{
+              backgroundImage: `url(${ButtonBgImg})`,
+              backgroundSize: "100% 100%", // Ensures full coverage of the button
+            }}
           >
-            Click Me
+            Register now!
           </button>
         </div>
       </section>

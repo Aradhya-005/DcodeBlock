@@ -12,9 +12,16 @@
   /* font-weight: 700; */
   
 }
+@font-face {
+  font-family: 'VTF Justina GEO';
+  src: url('../src/assets/fonts/VTFJustinaGEO-Regular.otf');
+  /* font-weight: 700; */
+  
+}
 @theme{
     --font-proxon: Proxon, 'sans-serif';
     --font-vtfjustinageo : VTF Justina GEO, 'sans-serif';
+    --font-VTFJustinaGeoRegular: VTF Justina GEO, 'sans-serif';
 
 }
 
