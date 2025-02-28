@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import NavigationLinks from "./NavigationLinks";
 import NavLine from "../assets/Nav-reectangle.svg";
 import Navbar from "./Navbar";
@@ -11,8 +12,12 @@ import BgImg from "../assets/BackgroundVideo.svg";
 import BlurBg from "../assets/blur-2.png";
 import SingularityLogo from "../assets/Singularity-White-logo.svg";
 import ButtonBgImg from "../assets/button-bg.png";
+import ActiveButtonBgImg from "../assets/ActiveButtonBg.png"; 
+
 
 function HeroSection() {
+  const [isHovered, setIsHovered] = useState(false);
+
   // Image data for InfiniteScroll
   const images = [
     { id: 1, src: InfinteScroll_1, alt: "Image 1" },
@@ -105,10 +110,14 @@ function HeroSection() {
             {/* Register Button */}
             <button
               className="relative bg-cover font-VTFJustinaGeoRegular font-light tracking-wider bg-center bg-no-repeat w-[140px] sm:w-[160px] lg:w-[178px] h-[50px] sm:h-[60px] flex items-center justify-center text-white mt-4 sm:mt-0"
+          
               style={{
-                backgroundImage: `url(${ButtonBgImg})`,
-                backgroundSize: "100% 100%", // Ensures full coverage of the button
+                
+                backgroundImage: `url(${isHovered ? ActiveButtonBgImg : ButtonBgImg})`,
+                backgroundSize: "100% 100%", 
               }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             >
               Register now!
             </button>

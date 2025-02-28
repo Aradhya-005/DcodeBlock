@@ -1,8 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
+import { NavLink } from "react-router-dom"; 
 import hackIndiaLogo from "../assets/HackIndia.svg";
 import ButtonBgImg from "../assets/button-bg.png";
-import ActiveButtonBgImg from "../assets/ActiveButtonBg.png"; // Add this image for active state
+import ActiveButtonBgImg from "../assets/ActiveButtonBg.png"; 
 
 const NavigationLinks = () => {
   const navLinks = [
