@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from './components/HeroSection'
 import BottomSection from './components/BottomSection'
 import Footer from './components/Footer'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
   
    <HeroSection/>
    <BottomSection/>
+
    </>
   )
 }
