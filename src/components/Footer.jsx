@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,17 +9,17 @@ function Footer() {
 
       {/* Links Section */}
       <div className="flex space-x-6 text-[16px] ">
-        <a href="#" className="hover:underline">
+        <Link to="#" className="hover:underline">
           Help Center
-        </a>
+        </Link>
         <span>|</span>
-        <a href="#" className="hover:underline">
+        <Link to="#" className="hover:underline">
           Terms and Conditions
-        </a>
+        </Link>
         <span>|</span>
-        <a href="#" className="hover:underline">
+        <Link to="#" className="hover:underline">
           Privacy Policy
-        </a>
+        </Link>
       </div>
     </footer>
   );

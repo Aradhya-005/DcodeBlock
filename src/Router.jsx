@@ -1,16 +1,16 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import App from "./App";
 
 function Router() {
   return (
     <>
       <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-    {/* <Route path="*" element={<NotFound />} /> */}
-  </Routes>
+        <Route path="/" element={<App/>} />
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
     </>
-  )
+  );
 }
 
-export default Router
+export default Router;
