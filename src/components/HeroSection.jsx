@@ -25,17 +25,17 @@ function HeroSection() {
     <>
       {/* Hero Section */}
       <section
-        className="relative w-full h-[110vh] bg-cover bg-center bg-no-repeat"
+        className="relative w-full lg:h-[110vh] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${BlurBg})` }}
       >
         {/* Background Image Overlay */}
         <div
-          className="absolute inset-0 top-0 left-0 w-full h-[110vh] bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 top-0 left-0 w-full lg:h-[110vh] bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${BgImg})` }}
         ></div>
 
         {/* Black Overlay */}
-        <div className="absolute inset-0 top-0 left-0 w-full h-[110vh] bg-black opacity-65"></div>
+        <div className="absolute inset-0 top-0 left-0 w-full lg:h-[110vh] bg-black opacity-65"></div>
 
         {/* Navbar */}
         <div className="relative z-10">
@@ -49,7 +49,7 @@ function HeroSection() {
         </div>
 
         {/* Main Content */}
-        <section className="pt-5 pb-7 flex flex-col relative z-10 items-center h-[110vh]">
+        <section className="pt-5 pb-7 flex flex-col relative z-10 items-center lg:h-[110vh]">
           {/* Logo */}
           <div>
             <img

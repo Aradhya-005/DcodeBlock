@@ -1,6 +1,6 @@
 import React from "react";
 
-function InfiniteScroll({ images, className = "", spacing  }) {
+function InfiniteScroll({ images, className = "", spacing }) {
   return (
     <div className={`relative w-full overflow-hidden ${className}`}>
       <div className="flex whitespace-nowrap animate-scroll">

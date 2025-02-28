@@ -30,7 +30,7 @@ function BottomSection() {
       <div className="absolute top-0 left-0 w-full h-[120vh] bg-black/75"></div>
 
       {/* Content Above the Overlay */}
-      <div className="relative z-10 flex flex-col lg:flex-row font-proxon gap-8 lg:gap-12  lg:py-[150px] px-4 lg:px-0">
+      <div className="relative z-10 flex flex-col lg:flex-row font-proxon gap-8 lg:gap-12  lg:py-[150px]  lg:px-0">
         {/* Left Section */}
         <div className="flex flex-col text-white gap-8 lg:gap-20">
           <div className="left-0">
@@ -40,7 +40,7 @@ function BottomSection() {
               className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-auto"
             />
           </div>
-          <div className="flex flex-col gap-8 lg:gap-12 lg:pl-20 tracking-widest">
+          <div className="flex flex-col px-4 gap-8 lg:gap-12 lg:pl-20 tracking-widest">
             <div>
               <h1
                 className="text-3xl sm:text-4xl lg:text-5xl"
